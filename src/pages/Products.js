@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import App from '../App'
+import ProductCard from "../Components/Products/ProductCard";
 
-const Products = () => {
+function Products(props) {
     return (
         <div>
-            <h1>this is the Products page</h1>
+            <App />
+
+            <ProductCard />
         </div>
     )
 }

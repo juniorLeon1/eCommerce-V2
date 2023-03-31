@@ -9,8 +9,8 @@ import Cart from "./pages/Cart"
 import Error from "./pages/Error";
 
 import './index.css'
-
-export default function App() {
+//dont look at app.js
+export default function Index() {
   return (
     <BrowserRouter>
       <Routes>
@@ -26,4 +26,4 @@ export default function App() {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Index />, document.getElementById("root"));

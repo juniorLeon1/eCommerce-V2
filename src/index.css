@@ -4,3 +4,7 @@
   box-sizing: border-box;
   font-family: "Mukta", sans-serif;
 }
+
+body {
+  background-color: gray;
+}

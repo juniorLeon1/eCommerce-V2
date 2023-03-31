@@ -1,15 +1,13 @@
 .slider {
     position: relative;
-    height: 500px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
 }
 
 .image {
-    height: 500px;
-    border-radius: 10px;
+    width: 100%;
 }
 
 .right-arrow {
@@ -17,8 +15,8 @@
     top: 50%;
     right: 10rem;
     font-size: 3rem;
-    color: black;
-    z-index: 10;
+    color: white;
+    z-index: 1;
     cursor: pointer;
     user-select: none;
 }
@@ -28,8 +26,8 @@
     top: 50%;
     left: 10rem;
     font-size: 3rem;
-    color: black;
-    z-index: 10;
+    color: white;
+    z-index: 1;
     cursor: pointer;
     user-select: none;
 }
