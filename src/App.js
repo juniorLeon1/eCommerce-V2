@@ -1,32 +1,26 @@
-import React, { useEffect, useState } from "react";
-import './App.css'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout"
+import Home from "./pages/Home";
+import Products from "./pages/Products"
+import Contact from "./pages/Contact";
+import Cart from "./pages/Cart"
+import Error from "./pages/Error";
 
 const App = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("http://localhost:5000/");
-        const data = await response.json();
-        setData(data);
-      } catch (err) {
-        console.error("Error fetching data:", err);
-      }
-    };
-    fetchData();
-  }, []);
-
   return (
-    <div>
-      <h1>Data from Database</h1>
-      <ul classname='dataContainer'>
-        {data.map((item, index) => (
-          <li key={index} className="dataInsideContainer">{JSON.stringify(item)}</li>
-        ))}
-      </ul>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="products" element={<Products />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="cart" element={<Cart />} />
+          <Route path="*" element={<Error />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
-};
+}
 
 export default App;

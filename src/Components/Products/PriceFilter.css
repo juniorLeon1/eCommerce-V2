@@ -1,0 +1,14 @@
+/* .price-filter {
+    padding: 0 70px;
+} */
+
+.price-filter__control label {
+    color: white;
+    font-size: 1.25em;
+}
+
+.price-filter__control select {
+    border: none;
+    border-bottom: 3px solid black;
+    font-size: 1.25em;
+}

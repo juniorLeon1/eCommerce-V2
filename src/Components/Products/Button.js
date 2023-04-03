@@ -1,10 +1,12 @@
 import React from 'react';
-import './Button.css'
+// import { useState } from 'react';
+import './Button.css';
 
-const Button = () => {
+const Button = (props) => {
 
+    // const [productArr, setProductArr] = useState([])
     const handleButton = () => {
-        console.log('clicked!')
+        console.log(props.buttonVal)
     };
 
     return (

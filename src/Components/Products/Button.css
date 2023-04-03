@@ -11,5 +11,6 @@
 
 .button:hover {
     background-color: teal;
+    /* background-color: #7EA0B7; */
     color: black;
 }

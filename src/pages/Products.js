@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from "react";
-import App from '../App'
-import ProductCard from "../Components/Products/ProductCard";
+import React from "react";
+import ProductCards from "../Components/Products/ProductCards";
 
 function Products(props) {
     return (
         <div>
-            <App />
-
-            <ProductCard />
+            <ProductCards />
         </div>
     )
 }
