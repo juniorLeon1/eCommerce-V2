@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import AddedCard from "../Components/Cart/AddedCard";
 
 const Cart = () => {
-    return (
-        <div>
-            <h1>this is the cart page</h1>
-        </div>
-    )
-}
+  return (
+    <div>
+      <AddedCard />
+    </div>
+  );
+};
 
 export default Cart;

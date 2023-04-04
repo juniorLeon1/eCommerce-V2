@@ -17,7 +17,7 @@ const Navbar = () => {
 
       <ul className="navLinks">
         <li className="navTitles"><Link to="/products" className="navA">Tools</Link></li>
-        <li className="navTitles"><Link to="/cart" className="navA">Cart</Link></li>
+        {/* <li className="navTitles"><Link to="/cart" className="navA">Cart</Link></li> */}
       </ul>
     </nav>
   );

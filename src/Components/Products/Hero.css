@@ -1,0 +1,30 @@
+.prod_Hero {
+  background-image: url(https://tapintohope.org/wp-content/uploads/2018/06/Emergency-Home-Repair.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 100px;
+  text-shadow: 3px 3px black;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .prod_Hero {
+    height: 200px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .prod_Hero {
+    height: 300px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+}

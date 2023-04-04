@@ -1,24 +1,11 @@
-import React, { useEffect, useState } from "react";
-import "./ProductCards.css";
+import React, { useState } from "react";
+import ProductsArray from "./ProductsArray";
+import "./ArrayCard.css";
 import Button from "./Button";
 import PriceFilter from "./PriceFilter";
 import TypeFilter from "./TypeFilter";
 
-const ProductCards = () => {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("http://localhost:5000/");
-        const data = await response.json();
-        setData(data);
-      } catch (err) {
-        console.error("Error fetching data:", err);
-      }
-    };
-    fetchData();
-  }, []);
-
+const ArrayCard = () => {
   const [filteredPrice, setFilteredPrice] = useState("all");
   const priceFilterHandler = (priceRange) => {
     setFilteredPrice(priceRange);
@@ -29,7 +16,7 @@ const ProductCards = () => {
     setFilteredType(typeRange);
   };
 
-  const filteredProducts = data.filter((data) => {
+  const filteredProducts = ProductsArray.filter((data) => {
     if (filteredPrice === "all" && filteredType === "all") {
       return data;
     } else if (filteredPrice === "all" && filteredType === "static") {
@@ -71,7 +58,11 @@ const ProductCards = () => {
         {filteredProducts.map((info) => {
           return (
             <div className="productCard" key={info.ID}>
-              <img className="productIMG" src={info.img} alt={info.prod_Name} />
+              <img
+                className="productIMG"
+                src={info.image}
+                alt={info.prod_Name}
+              />
               <div className="productText">
                 <h3 className="productTitle">{info.prod_Name}</h3>
                 <p className="productPrice">${info.price}</p>
@@ -88,4 +79,4 @@ const ProductCards = () => {
   );
 };
 
-export default ProductCards;
+export default ArrayCard;

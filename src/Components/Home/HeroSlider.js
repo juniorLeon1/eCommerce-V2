@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import HeroImages from "./HeroImages";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "./HeroSlider.css";
@@ -22,6 +22,7 @@ const HeroSlider = ({ slides }) => {
   return (
     <div className="slider">
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
+      <h1 className="heroTitle">We Sell <br /> Tools!</h1>
       <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
       {HeroImages.map((slide, index) => {
         return (

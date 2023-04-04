@@ -12,7 +12,7 @@ const TypeFilter = (props) => {
         <label>Type: </label>
         <select value={props.type} onChange={typeHandler}>
           <option value="all">All</option>
-          <option value="static">Static</option>
+          <option value="static">Stationary</option>
           <option value="mobile">Mobile</option>
         </select>
       </div>

@@ -21,6 +21,15 @@
     user-select: none;
 }
 
+.heroTitle {
+    position: absolute;
+    color: white;
+    font-size: 7rem;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    z-index: 1;
+}
+
 .left-arrow {
     position: absolute;
     top: 50%;
@@ -40,4 +49,69 @@
 .slide.active {
     opacity: 1;
     transition-duration: 1s;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .right-arrow {
+        font-size: 2rem;
+        right: 2rem;
+    }
+
+    .heroTitle {
+        font-size: 3rem;
+    }
+
+    .left-arrow {
+        font-size: 2rem;
+        left: 2rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .right-arrow {
+        font-size: 2rem;
+        right: 4rem;
+    }
+
+    .heroTitle {
+        font-size: 4rem;
+    }
+
+    .left-arrow {
+        font-size: 2rem;
+        left: 4rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .right-arrow {
+        font-size: 3rem;
+        right: 5rem;
+    }
+
+    .heroTitle {
+        font-size: 6rem;
+    }
+
+    .left-arrow {
+        font-size: 3rem;
+        left: 5rem;
+    }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .right-arrow {
+        font-size: 3rem;
+        right: 5rem;
+    }
+
+    .heroTitle {
+        font-size: 7rem;
+    }
+
+    .left-arrow {
+        font-size: 3rem;
+        left: 5rem;
+    }
 }

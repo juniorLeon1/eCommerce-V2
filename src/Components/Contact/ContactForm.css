@@ -21,6 +21,7 @@
   max-width: 800px;
   color: white;
   font-size: 30px;
+  text-shadow: 3px 3px black;
 }
 
 /* info + form container  */
@@ -117,4 +118,133 @@
   pointer-events: none;
   transition: 0.5s;
   color: black;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* container with all three contents  */
+  .infoForm {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* title  */
+  .title {
+    font-size: 20px;
+  }
+
+  .contactContainer {
+    padding: 20px 0;
+  }
+
+  .contactInfo {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* form container  */
+  .formTitle {
+    padding-left: 10px;
+    font-size: 20px;
+  }
+
+  .contactForm {
+    width: 90%;
+  }
+
+  .input {
+    overflow-y: hidden;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* container with all three contents  */
+  .infoForm {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* title  */
+  .title {
+    font-size: 20px;
+  }
+
+  /* the company's contact info container  */
+  .contactContainer {
+    padding: 20px 0;
+  }
+
+  .contactInfo {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* form container  */
+  .formTitle {
+    padding-left: 10px;
+  }
+
+  .contactForm {
+    width: 90%;
+  }
+
+  .input {
+    overflow-y: hidden;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* container with all three contents  */
+  .infoForm {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* title  */
+  .title {
+    font-size: 20px;
+  }
+
+  /* the company's contact info container  */
+  .contactContainer {
+    padding: 20px 0;
+  }
+
+  .contactInfo {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* form container  */
+  .formTitle {
+    padding-left: 10px;
+  }
+
+  .contactForm {
+    width: 70%;
+  }
+
+  .input {
+    overflow-y: hidden;
+  }
 }

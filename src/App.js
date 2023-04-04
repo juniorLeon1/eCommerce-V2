@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout"
+import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import Products from "./pages/Products"
+import Products from "./pages/Products";
 import Contact from "./pages/Contact";
-import Cart from "./pages/Cart"
+import Cart from "./pages/Cart";
 import Error from "./pages/Error";
 
 const App = () => {
@@ -21,6 +21,6 @@ const App = () => {
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
