@@ -1,16 +1,16 @@
 import React from "react";
-import ProductCards from "../Components/Products/ProductCards";
+// import ProductCards from "../Components/Products/ProductCards";
 import Hero from "../Components/Products/Hero";
-// import ArrayCard from "../Components/Products/ArrayCard";
+import ArrayCard from "../Components/Products/ArrayCard";
 
 function Products(props) {
   return (
     <div>
       <Hero />
 
-      <ProductCards />
+      {/* <ProductCards /> */}
 
-      {/* <ArrayCard /> */}
+      <ArrayCard />
     </div>
   );
 }
