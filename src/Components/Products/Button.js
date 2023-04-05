@@ -1,19 +1,17 @@
 import React from "react";
-// import { useState } from "react";
+import { useContext } from "react";
 import "./Button.css";
+import { ShopContext } from "../../context/shop-context";
 
 export const CartArray = [];
 
 const Button = (props) => {
-  // const [added, setAdded] = useState([]);
-  const handleButton = () => {
-    CartArray.push(props.buttonVal);
-    console.log(CartArray)
-  };
+
+  const { addToCart } = useContext(ShopContext)
 
   return (
     <div>
-      <button className="button" onClick={handleButton}>
+      <button className="button" onClick={() => addToCart(props.buttonVal)}>
         Add to Cart
       </button>
     </div>

@@ -3,7 +3,7 @@ import React from "react";
 import Hero from "../Components/Products/Hero";
 import ArrayCard from "../Components/Products/ArrayCard";
 
-function Products(props) {
+function Products() {
   return (
     <div>
       <Hero />
