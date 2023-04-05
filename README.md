@@ -36,4 +36,4 @@ If you followed these instructions it should take you to a page that looks somet
 ## Deployment
 This application was also deployed through netlify. Link below:
 
-[Our app deployed](https://bespoke-lamington-2b1ccb.netlify.app/)
+[Our app deployed](https://silver-alfajores-3b1022.netlify.app/)

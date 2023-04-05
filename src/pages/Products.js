@@ -1,5 +1,5 @@
 import React from "react";
-// import ProductCards from "../Components/Products/ProductCards";
+import ProductCards from "../Components/Products/ProductCards";
 import Hero from "../Components/Products/Hero";
 import ArrayCard from "../Components/Products/ArrayCard";
 

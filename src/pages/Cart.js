@@ -1,9 +1,10 @@
 import React from "react";
+import CartCards from "../Components/Cart/CartCards";
 
 const Cart = () => {
   return (
     <div>
-      <h1>this is the cart page</h1>
+      <CartCards />
     </div>
   );
 };

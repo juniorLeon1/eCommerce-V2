@@ -7,12 +7,14 @@ export const CartArray = [];
 
 const Button = (props) => {
 
-  const { addToCart } = useContext(ShopContext)
+  const { addToCart, cartItems } = useContext(ShopContext)
+
+  const cartItemAmount = cartItems[props.buttonVal]
 
   return (
     <div>
       <button className="button" onClick={() => addToCart(props.buttonVal)}>
-        Add to Cart
+        Add to Cart {cartItemAmount > 0 && <> ({cartItemAmount}) </>}
       </button>
     </div>
   );
