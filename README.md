@@ -10,7 +10,7 @@ To get started with our application you will need to follow the instructions lis
 1. Clone the repository or download the source code
 2. Open the terminal and navigate to the project folder you just cloned
 3. Run 'npm install (dependency name)' to download the dependencies located in our package.json file
-4. run 'npm start' to make the application fo live on your local port 3000
+4. run 'npm start' to make the application go live on your local port 3000
 5. Open up your browser and in a new tab type in localhost:3000
 
 If you followed these instructions it should take you to a page that looks something like the image below:
