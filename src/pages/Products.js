@@ -7,9 +7,7 @@ function Products() {
   return (
     <div>
       <Hero />
-
       {/* <ProductCards /> */}
-
       <ArrayCard />
     </div>
   );
