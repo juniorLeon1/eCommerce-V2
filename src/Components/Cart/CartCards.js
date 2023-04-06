@@ -18,14 +18,20 @@ const CartCards = (props) => {
       <div className="cartItems">
         {ProductsArray.map((product) => {
           if (cartItems[product.ID] !== 0) {
-            return <CartItem data={product} />;
+            return (
+              <div>
+                <CartItem data={product} />
+              </div>
+            );
+          } else {
+            return null
           }
         })}
       </div>
 
       {totalAmount > 0 ? (
         <div className="checkout">
-          <p>Subtotal: ${totalAmount}</p>
+          <h2>Subtotal: ${totalAmount}</h2>
           <Link to="/products">
             <button>Continue Shopping</button>
           </Link>

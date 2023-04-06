@@ -33,7 +33,7 @@ const ShopContextProvider = (props) => {
         let itemInfo = ProductsArray.find(
           (product) => product.ID === Number(item)
         );
-        totalAmount += cartItems[item] * itemInfo.price
+        totalAmount += Math.round(cartItems[item] * itemInfo.price)
       }
     }
     return totalAmount;
