@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 import "./CartCards.css";
 
-const CartCards = (props) => {
+const CartCards = () => {
   const { cartItems, getTotalCartAmount } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
 
