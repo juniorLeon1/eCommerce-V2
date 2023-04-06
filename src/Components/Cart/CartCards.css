@@ -31,6 +31,10 @@
   font-weight: bolder;
 }
 
+.checkout {
+  height: 35vh;
+}
+
 .checkout h2 {
   text-align: center;
 }
