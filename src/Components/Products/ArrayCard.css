@@ -149,7 +149,7 @@
     .productText {
       display: flex;
       flex-direction: column;
-      height: 185px;
+      height: 200px;
     }
   
     .productTitle,
