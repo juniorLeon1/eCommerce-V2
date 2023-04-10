@@ -77,7 +77,7 @@
   }
 
   .productCard {
-    height: 600px;
+    height: 700px;
   }
 
   .productText {
@@ -114,20 +114,19 @@
   }
 
   .productCard {
-    height: 600px;
+    height: 650px;
   }
 
   .productText {
     display: flex;
     flex-direction: column;
-    height: 175px;
+    height: 200px;
   }
 
   .productTitle,
   .productPrice,
   .productDesc {
     padding-bottom: 5px;
-    /* overflow-y: hidden; */
   }
 
   .purchase {
