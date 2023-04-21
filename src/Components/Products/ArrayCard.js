@@ -39,7 +39,7 @@ const ArrayCard = () => {
   return (
     <div className="ProductBody">
       <div className="header">
-        <h1>{filteredProducts.length} Results</h1>
+        <h1 className="results-counter">{filteredProducts.length} Results</h1>
         <div className="filters">
           <PriceFilter
             price={filteredPrice}

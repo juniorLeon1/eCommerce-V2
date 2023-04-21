@@ -10,7 +10,7 @@ const PriceFilter = (props) => {
     <div className="price-filter">
       <div className="price-filter__control">
         <label>Price: </label>
-        <select value={props.price} onChange={priceHandler}>
+        <select className="price-filter__select" value={props.price} onChange={priceHandler}>
           <option value="all">All</option>
           <option value="low">$0 - $50</option>
           <option value="mid">$50 - $100</option>
